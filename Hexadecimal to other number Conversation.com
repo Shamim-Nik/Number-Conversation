@@ -64,11 +64,10 @@ void hexadecimal(vct Arr,int len) {
         cout << ch[p];
 }
 
-int main()
-{
+int main() {
     string hexa_dcm;
     cout << "Enter a Hexadecimal number : ";
-    while(cin >> hexa_dcm) {
+    while (cin >> hexa_dcm) {
         int i = 0;
 #if 1
         bool check_hexa_dcm = true;
@@ -99,22 +98,118 @@ int main()
             i = 0;
         for (; hexa_dcm[i]; i++) {
             switch (hexa_dcm[i]) {
-                case '0' : { Binary.push_back(0);  Binary.push_back(0);   Binary.push_back(0);  Binary.push_back(0);   break; }
-                case '1' : { Binary.push_back(0);  Binary.push_back(0);   Binary.push_back(0);  Binary.push_back(1);   break; }
-                case '2' : { Binary.push_back(0);  Binary.push_back(0);   Binary.push_back(1);  Binary.push_back(0);   break; }
-                case '3' : { Binary.push_back(0);  Binary.push_back(0);   Binary.push_back(1);  Binary.push_back(1);   break; }
-                case '4' : { Binary.push_back(0);  Binary.push_back(1);   Binary.push_back(0);  Binary.push_back(0);   break; }
-                case '5' : { Binary.push_back(0);  Binary.push_back(1);   Binary.push_back(0);  Binary.push_back(1);   break; }
-                case '6' : { Binary.push_back(0);  Binary.push_back(1);   Binary.push_back(1);  Binary.push_back(0);   break; }
-                case '7' : { Binary.push_back(0);  Binary.push_back(1);   Binary.push_back(1);  Binary.push_back(1);   break; }
-                case '8' : { Binary.push_back(1);  Binary.push_back(0);   Binary.push_back(0);  Binary.push_back(0);   break; }
-                case '9' : { Binary.push_back(1);  Binary.push_back(0);   Binary.push_back(0);  Binary.push_back(1);   break; }
-                case 'A' : { Binary.push_back(1);  Binary.push_back(0);   Binary.push_back(1);  Binary.push_back(0);   break; }
-                case 'B' : { Binary.push_back(1);  Binary.push_back(0);   Binary.push_back(1);  Binary.push_back(1);   break; }
-                case 'C' : { Binary.push_back(1);  Binary.push_back(1);   Binary.push_back(0);  Binary.push_back(0);   break; }
-                case 'D' : { Binary.push_back(1);  Binary.push_back(1);   Binary.push_back(0);  Binary.push_back(1);   break; }
-                case 'E' : { Binary.push_back(1);  Binary.push_back(1);   Binary.push_back(1);  Binary.push_back(0);   break; }
-                case 'F' : { Binary.push_back(1);  Binary.push_back(1);   Binary.push_back(1);  Binary.push_back(1);   break; }
+                case '0' : {
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    break;
+                }
+                case '1' : {
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    break;
+                }
+                case '2' : {
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    break;
+                }
+                case '3' : {
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    break;
+                }
+                case '4' : {
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    break;
+                }
+                case '5' : {
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    break;
+                }
+                case '6' : {
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    break;
+                }
+                case '7' : {
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    break;
+                }
+                case '8' : {
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    break;
+                }
+                case '9' : {
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    break;
+                }
+                case 'A' : {
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    break;
+                }
+                case 'B' : {
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    break;
+                }
+                case 'C' : {
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    Binary.push_back(0);
+                    break;
+                }
+                case 'D' : {
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    Binary.push_back(1);
+                    break;
+                }
+                case 'E' : {
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    Binary.push_back(0);
+                    break;
+                }
+                case 'F' : {
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    Binary.push_back(1);
+                    break;
+                }
             }
         }
 #if 1
@@ -183,8 +278,7 @@ int main()
                     cout << "Hexadecimal number = ";
                     if (hexa_dcm.at(0) == '-') {
                         hexadecimal(binary, binary.size());
-                    }
-                    else {
+                    } else {
                         i = 0;
                         for (; i < hexa_dcm.size(); i++)
                             cout << hexa_dcm[i];
